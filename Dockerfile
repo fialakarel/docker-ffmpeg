@@ -1,10 +1,8 @@
-FROM ubuntu:18.10
+FROM alpine:latest
 
 MAINTAINER Karel Fiala <fiala.karel@gmail.com>
 
-RUN apt-get update \
-	  && apt-get install --yes wget xz-utils \
-  	&& cd /opt \
+RUN cd /opt \
   	&& wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz \
   	&& unxz ffmpeg-release-amd64-static.tar.xz \
   	&& tar -xf ffmpeg-release-amd64-static.tar \
