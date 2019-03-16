@@ -10,4 +10,4 @@ push:
 	docker push $(IMAGE_NAME)
 
 testrun:
-	docker run --rm -it --name ffmpeg $(IMAGE_NAME) --help
+	docker run --rm -it --name ffmpeg $(IMAGE_NAME) ffmpeg -h

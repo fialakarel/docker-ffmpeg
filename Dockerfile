@@ -9,5 +9,3 @@ RUN cd /opt \
   	&& rm ffmpeg-release-amd64-static.tar \
   	&& ln -s $(find /opt -name ffmpeg) /usr/bin/ffmpeg \
   	&& ln -s $(find /opt -name ffprobe) /usr/bin/ffprobe
-
-ENTRYPOINT /usr/bin/ffmpeg

@@ -9,4 +9,4 @@ FFmpeg Docker image
         --name ffmpeg \
         --volume /outside/data:/inside/data:rw \
         fialakarel/ffmpeg \
-        --help
+        ffmpeg -h
